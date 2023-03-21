@@ -16,19 +16,19 @@ def webhook(request):
     # get action from json
     action = req.get('sessionInfo').get('parameters')
     operacao = action.get('operacao')
-    print("ACTION: ", action)
+    print('ACTION: ', action)
     n1 = int(action.get('numero_1'))
     n2 = int(action.get('numero_2'))
 
-    print("N1: ", n1)
-    print("N2: ", n2)
-    print("OP: ", operacao)
+    print('N1: ', n1)
+    print('N2: ', n2)
+    print('OP: ', operacao)
 
        
-    if operacao == "Adição":
+    if operacao == 'Adição':
          resposta = n1+n2
 
-    elif operacao == "Subtração":
+    elif operacao == 'Subtração':
          resposta = n1-n2
    
     elif operacao == 'Divisão':
@@ -39,12 +39,19 @@ def webhook(request):
 
     fulfillmentResponse = {
         'fulfillmentResponse': {
-            'messages': [{
-                'text': {
-                    'text': [resposta],
+            'messages': [
+                {
+                    'text': {
+                        'text': ['A operação escolhida foi uma: ' + str(operacao)]
+                    }
                 },
-            }]
-        },
+                {
+                    'text': {
+                        'text': ['O resultado da operação é: ' + str(resposta)],
+                    }
+                }
+            ]
+        }
     }
    
     return JsonResponse(fulfillmentResponse, safe=False)
