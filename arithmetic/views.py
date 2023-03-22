@@ -5,6 +5,8 @@ import json
 
 def home(request):
 	return render(request, 'arithmetic/home.html')
+    #return render(request, 'arithmetic/grecords.html')
+
 
 # Create your views here.
 @csrf_exempt
