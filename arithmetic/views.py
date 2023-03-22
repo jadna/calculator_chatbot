@@ -12,6 +12,7 @@ def webhook(request):
     res = {}
     # build a request object
     req = json.loads(request.body)
+    print("REQ: ", req)
 
     # get action from json
     action = req.get('sessionInfo').get('parameters')

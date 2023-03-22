@@ -1,0 +1,178 @@
+{
+  "richContent": [
+    [
+      {
+        "type": "info",
+        "image": {
+          "src": {
+            "rawUrl": "https://img.icons8.com/fluency/256/plus-math.png"
+          }
+        },
+        "title": "Adição",
+        "actionLink": "https://example.com"
+      },
+      {
+        "title": "Subtração",
+        "type": "info",
+        "image": {
+          "src": {
+            "rawUrl": "https://img.icons8.com/fluency/256/minus-math.png"
+          }
+        },
+        "actionLink": "https://example.com"
+      },
+      {
+        "image": {
+          "src": {
+            "rawUrl": "https://img.icons8.com/fluency/256/multiply.png"
+          }
+        },
+        "type": "info",
+        "title": "Multiplicação",
+        "actionLink": "https://example.com"
+      },
+      {
+        "image": {
+          "src": {
+            "rawUrl": "https://img.icons8.com/fluency/256/divide.png"
+          }
+        },
+        "type": "info",
+        "actionLink": "https://example.com",
+        "title": "Divisão"
+      }
+    ]
+  ]
+}
+
+{
+  "richContent": [
+    [
+      {
+        "event": {
+          "parameters": {},
+          "name": "button_press",
+          "languageCode": "en"
+        },
+        "type": "button",
+        "text": "Adição",
+        "event": {
+          "name": ""
+        },
+        "link": "https://example.com",
+        "icon": {
+          "type": "add",
+          "color": "#FF9800"
+        }
+      },
+      {
+        "event": {
+          "parameters": {},
+          "name": "button_press",
+          "languageCode": "en"
+        },
+        "type": "button",
+        "link": "https://example.com",
+        "icon": {
+          "type": "remove",
+          "color": "#33A2FF"
+        },
+        "text": "Subtração"
+      },
+      {
+        "event": {
+          "parameters": {},
+          "name": "button_press",
+          "languageCode": "en"
+        },
+        "type": "button",
+        "link": "https://example.com",
+        "text": "Multiplicação",
+        "event": {
+          "name": ""
+        },
+        "icon": {
+          "color": "#33FF74",
+          "type": "close"
+        }
+      },
+      {
+        "event": {
+          "parameters": {},
+          "name": "button_press",
+          "languageCode": "en"
+        },
+        "link": "https://example.com",
+        "type": "button",
+        "icon": {
+          "color": "#FF338D",
+          "type": "expand_more"
+        },
+        "text": "Divisão"
+      }
+    ]
+  ]
+}
+
+{
+  "richContent": [
+    [
+      {
+        "event": {
+          "parameters": {},
+          "name": "button_press",
+          "languageCode": "en"
+        },
+        "icon": {
+          "type": "add",
+          "color": "#FF9800"
+        },
+        "type": "button",
+        "link": "",
+        "text": "Adição"
+      },
+      {
+        "event": {
+          "name": "button_press",
+          "languageCode": "en",
+          "parameters": {}
+        },
+        "type": "button",
+        "icon": {
+          "type": "remove",
+          "color": "#33A2FF"
+        },
+        "text": "Subtração",
+        "link": ""
+      },
+      {
+        "event": {
+          "name": "button_press",
+          "languageCode": "en",
+          "parameters": {}
+        },
+        "type": "button",
+        "icon": {
+          "color": "#33FF74",
+          "type": "close"
+        },
+        "text": "Multiplicação",
+        "link": ""
+      },
+      {
+        "event": {
+          "name": "button_press",
+          "languageCode": "en",
+          "parameters": {}
+        },
+        "type": "button",
+        "icon": {
+          "color": "#FF338D",
+          "type": "expand_more"
+        },
+        "text": "Divisão",
+        "link": ""
+      }
+    ]
+  ]
+}
